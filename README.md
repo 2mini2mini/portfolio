@@ -2,6 +2,8 @@
 
 포트폴리오 웹사이트 프로젝트입니다.
 
+**접속 주소:** https://2mini2mini.github.io/portfolio/
+
 ## 환경설정
 
 - HTML, CSS, JavaScript (바닐라)
