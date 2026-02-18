@@ -18,7 +18,7 @@
     <!-- Header / Navigation -->
     <header class="header">
       <div class="container container--gnb header__inner">
-        <a href="#" class="header__logo">
+        <a href="#hero" class="header__logo">
           <svg
             class="logo-svg"
             width="125"
@@ -156,6 +156,10 @@
           </svg>
           <span class="header__logo-text">LEEMINHEE</span>
         </a>
+        <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-expanded="false">
+          <img src="icons/gnb-menu-mobile.svg" alt="" class="header__menu-icon header__menu-icon--open" />
+          <span class="header__menu-icon header__menu-icon--close" aria-hidden="true">×</span>
+        </button>
         <nav class="header__nav">
           <a href="#about">ABOUT</a>
           <a href="#project">PROJECT</a>
@@ -167,23 +171,28 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="hero__inner">
-        <div class="hero__images">
-          <div class="hero__row hero__row--1">
-            <img src="images/hero-orange.svg" alt="" class="hero__img" />
+          <div class="hero__images">
+            <div class="hero__row hero__row--1">
+              <img src="images/hero-orange.png" alt="" class="hero__img" />
+            </div>
+            <div class="hero__row hero__row--2">
+              <img src="images/hero-yellow.png" alt="" class="hero__img" />
+            </div>
+            <div class="hero__row hero__row--3">
+              <img src="images/hero-blue.png" alt="" class="hero__img" />
+            </div>
           </div>
-          <div class="hero__row hero__row--2">
-            <img src="images/hero-yellow.svg" alt="" class="hero__img" />
-          </div>
-          <div class="hero__row hero__row--3">
-            <img src="images/hero-blue.svg" alt="" class="hero__img" />
-          </div>
-        </div>
-        <a href="#about" class="hero__scroll-btn">
-          <img src="icons/bg-btn-gray.svg" alt="" class="hero__scroll-bg" />
-          <img src="icons/icon-down.svg" alt="아래로 스크롤" class="hero__scroll-icon" />
-        </a>
+          <img src="images/hero-mobile.png" alt="MINHEE PORTFOLIO 2026" class="hero__img-mobile" />
+          <a href="#about" class="hero__scroll-btn">
+            <img src="icons/bg-btn-gray.svg" alt="" class="hero__scroll-bg" />
+            <img
+              src="icons/icon-down.svg"
+              alt="아래로 스크롤"
+              class="hero__scroll-icon"
+            />
+          </a>
         </div>
       </section>
 
@@ -195,6 +204,85 @@
             <!-- 프로필 이미지 위치 -->
             <span class="placeholder placeholder--profile"></span>
           </div>
+          <div class="about__skills">
+            <span class="about__skills-label">SKILLS</span>
+            <div class="about__skills-container">
+              <div class="about__skills-group">
+                <div class="about__skills-icons">
+                  <span class="skill-icon" data-tooltip="Figma"
+                    ><img src="icons/skill-design-fm.png" alt="Figma"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="Photoshop"
+                    ><img src="icons/skill-design-ps.png" alt="Photoshop"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="Illustrator"
+                    ><img src="icons/skill-design-ai.png" alt="Illustrator"
+                  /></span>
+                </div>
+                <span class="about__skills-category">UI DESIGN</span>
+              </div>
+              <img
+                src="images/skills-line.svg"
+                alt=""
+                class="about__skills-divider"
+                aria-hidden="true"
+              />
+              <div class="about__skills-group">
+                <div class="about__skills-icons">
+                  <span class="skill-icon" data-tooltip="After Effects"
+                    ><img src="icons/skill-motion-ae.png" alt="After Effects"
+                  /></span>
+                </div>
+                <span class="about__skills-category">MOTION</span>
+              </div>
+              <img
+                src="images/skills-line.svg"
+                alt=""
+                class="about__skills-divider"
+                aria-hidden="true"
+              />
+              <div class="about__skills-group">
+                <div class="about__skills-icons">
+                  <span class="skill-icon" data-tooltip="HTML5"
+                    ><img src="icons/skill-markup-html.png" alt="HTML"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="CSS3"
+                    ><img src="icons/skill-markup-css.png" alt="CSS"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="JavaScript"
+                    ><img src="icons/skill-markup-js.png" alt="JavaScript"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="Tailwind CSS"
+                    ><img src="icons/skill-markup-tw.png" alt="Tailwind"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="Vue.js"
+                    ><img src="icons/skill-markup-vj.png" alt="Vue.js"
+                  /></span>
+                </div>
+                <span class="about__skills-category">MARKUP & INTERACTION</span>
+              </div>
+              <img
+                src="images/skills-line.svg"
+                alt=""
+                class="about__skills-divider"
+                aria-hidden="true"
+              />
+              <div class="about__skills-group">
+                <div class="about__skills-icons">
+                  <span class="skill-icon" data-tooltip="Cursor AI"
+                    ><img src="icons/skill-ai-cursor.png" alt="Cursor AI"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="Gemini"
+                    ><img src="icons/skill-ai-gn.png" alt="Gemini"
+                  /></span>
+                  <span class="skill-icon" data-tooltip="ChatGPT"
+                    ><img src="icons/skill-ai-gpt.png" alt="ChatGPT"
+                  /></span>
+                </div>
+                <span class="about__skills-category">AI</span>
+              </div>
+            </div>
+          </div>
           <div class="about__info">
             <h3 class="about__name">
               LEE MINHEE
@@ -202,15 +290,16 @@
             </h3>
             <div class="about__intro">
               <h4 class="about__intro-title">
-                '이해하기 쉬운가'를 기준으로 사용자 흐름을 설계하고,<br/>디자인과
+                '이해하기 쉬운가'를 기준으로 사용자 흐름을 설계하고,<br />디자인과
                 퍼블리싱을 함께 완성합니다.
               </h4>
               <p class="about__text">
-                실무에서는 화면을 꾸미기보다, 사용자가 망설이지 않고 다음
-                행동으로 넘어갈 수 있도록<br />흐름을 먼저 설계하고, 그 의도가 실제
-                화면에서도 그대로 작동하도록 구현해왔습니다.<br />앞으로도
-                사용자의 이해를 기준으로, 복잡한 기능을 단순한 경험으로 바꾸는
-                디자인을 만들고자 합니다.
+                실무에서는 화면을 꾸미기보다, 사용자가 망설이지 않고<br class="about__text-br" />
+                다음 행동으로 넘어갈 수 있도록 흐름을 먼저 설계하고,<br class="about__text-br" />
+                <span class="about__text-line about__text-line--indent1">그 의도가 실제 화면에서도 그대로 작동하도록</span><br class="about__text-br" />
+                <span class="about__text-line about__text-line--indent2">구현해왔습니다.</span><br class="about__text-br" />
+                앞으로도 사용자의 이해를 기준으로, 복잡한 기능을<br class="about__text-br" />
+                <span class="about__text-line about__text-line--indent1">단순한 경험으로 바꾸는 디자인을 만들고자 합니다.</span>
               </p>
             </div>
             <a href="#" class="about__resume-btn">
@@ -221,22 +310,37 @@
             </a>
             <div class="about__details">
               <div class="about__detail-block">
-                <strong class="about__detail-label"><span class="about__detail-label-inner">EXPERIENCE</span></strong>
-                <p>경력 정보</p>
+                <strong class="about__detail-label"
+                  ><span class="about__detail-label-inner"
+                    >EXPERIENCE</span
+                  ></strong
+                >
+                <p>
+                  <span class="about__experience-header"
+                    >2024.01 ~
+                    <strong>EK 주식회사 IT부서 디자인팀</strong></span
+                  ><br />
+                  <span class="about__experience-desc"
+                    >· 서비스 UI/UX 디자인 및 퍼블리싱 전반 담당<br />
+                    · 기획 의도에 맞춘 화면 구조 설계 및 인터랙션 구현</span
+                  >
+                </p>
               </div>
               <div class="about__detail-block">
-                <strong class="about__detail-label"><span class="about__detail-label-inner">EDUCATION</span></strong>
-                <p>학력 정보</p>
+                <strong class="about__detail-label"
+                  ><span class="about__detail-label-inner"
+                    >EDUCATION</span
+                  ></strong
+                >
+                <p class="about__education-list">
+                  2023 <strong>아마스에잇 UXUI 디자인 ・ 기획 클래스</strong
+                  ><br />
+                  2020
+                  <strong>하이미디어 아카데미 그래픽디자인 전문가 과정</strong
+                  ><br />
+                  2015.03 - 2018.02 <strong>신구대학교 유아교육과</strong>
+                </p>
               </div>
-            </div>
-            <div class="about__skills">
-              <!-- 도구 아이콘들 위치 (가로 나열) -->
-              <span class="placeholder placeholder--skill"></span>
-              <span class="placeholder placeholder--skill"></span>
-              <span class="placeholder placeholder--skill"></span>
-              <span class="placeholder placeholder--skill"></span>
-              <span class="placeholder placeholder--skill"></span>
-              <span class="placeholder placeholder--skill"></span>
             </div>
           </div>
         </div>
@@ -244,34 +348,35 @@
 
       <!-- Project Section -->
       <section id="project" class="project">
-        <h2 class="section-title">Project</h2>
-        <div class="project__grid">
-          <article class="project__card">
-            <span class="placeholder placeholder--project"></span>
-            <p>프로젝트 1</p>
-          </article>
-          <article class="project__card">
-            <span class="placeholder placeholder--project"></span>
-            <p>프로젝트 2</p>
-          </article>
-          <article class="project__card">
-            <span class="placeholder placeholder--project"></span>
-            <p>프로젝트 3</p>
-          </article>
-          <article class="project__card">
-            <span class="placeholder placeholder--project"></span>
-            <p>프로젝트 4</p>
-          </article>
-          <article class="project__card">
-            <span class="placeholder placeholder--project"></span>
-            <p>프로젝트 5</p>
-          </article>
-        </div>
+        <h2 class="section-title section-title--center">Project</h2>
         <div class="project__filter">
-          <button>전체</button>
-          <button>App</button>
-          <button>Web</button>
-          <button>Others</button>
+          <button
+            type="button"
+            class="project__filter-btn is-active"
+            data-category="web"
+          >
+            WEB
+          </button>
+          <button type="button" class="project__filter-btn" data-category="app">
+            APP
+          </button>
+          <button
+            type="button"
+            class="project__filter-btn"
+            data-category="promotion"
+          >
+            PROMOTION
+          </button>
+          <button
+            type="button"
+            class="project__filter-btn"
+            data-category="others"
+          >
+            OTHERS
+          </button>
+        </div>
+        <div class="project__grid">
+          <!-- 프로젝트 카드는 js/projects-data.js + projects-render.js 로 렌더링 -->
         </div>
       </section>
 
@@ -279,43 +384,233 @@
       <section id="ai-workflow" class="ai-workflow">
         <h2 class="section-title section-title--center">AI Workflow</h2>
         <p class="ai-workflow__desc">
-          AI Workflow에 대한 소개 텍스트가 들어갈 자리입니다.
+          <strong class="ai-workflow__desc-emphasis"
+            >반복되는 디자인 업무</strong
+          >를 더 나은 방향으로 개선할 수 없을지 고민하며,
+          <strong class="ai-workflow__desc-emphasis">AI를 적용</strong>한 자동화
+          작업을 정리해<br />
+          회사 구성원들이 함께 활용할 수 있는
+          <strong class="ai-workflow__desc-emphasis">효율적인 작업 방식</strong
+          >을 만들었습니다.
         </p>
         <div class="ai-workflow__tabs">
-          <button>기획</button>
-          <but어바ton>디자인</button>
-          <button>개발</button>
+          <button
+            type="button"
+            class="project__filter-btn ai-workflow__tab--hidden"
+            data-tab="banner"
+            data-category="web"
+          >
+            배너 템플릿 자동화
+          </button>
+          <button
+            type="button"
+            class="project__filter-btn is-active"
+            data-tab="icon"
+            data-category="app"
+          >
+            아이콘 에셋 제작
+          </button>
+          <button
+            type="button"
+            class="project__filter-btn ai-workflow__tab--hidden"
+            data-tab="logo"
+            data-category="promotion"
+          >
+            브랜드 로고 변주
+          </button>
         </div>
-        <div class="ai-workflow__card">
-          <div class="ai-workflow__card-content">
-            <h3>아이디어 구상 단계</h3>
-            <p>상세 설명 텍스트</p>
-            <button>자세히 보기</button>
-          </div>
-        </div>
-        <p class="ai-workflow__question">
-          통일된 기준을 유지하면서도 필요한 아이콘을 개발할 수 있을까?
-        </p>
-        <div class="ai-workflow__examples">
-          <div class="ai-workflow__example">
-            <span class="placeholder placeholder--example"></span>
-            <div class="ai-workflow__example-text">
-              <h4>예시 컨셉 1</h4>
-              <p>설명 텍스트</p>
+        <div class="ai-workflow__panels">
+          <!-- 배너 템플릿 자동화 -->
+          <div class="ai-workflow__panel" data-panel="banner">
+            <div class="ai-workflow__card">
+              <div class="ai-workflow__card-content">
+                <h3>배너 템플릿 자동화</h3>
+                <p>배너 제작 워크플로우 상세 설명</p>
+                <button>자세히 보기</button>
+              </div>
+            </div>
+            <div class="ai-workflow__question">
+              <img
+                src="icons/aiwork-que.png"
+                alt=""
+                class="ai-workflow__question-icon"
+              />
+              <p class="ai-workflow__question-text">
+                반복되는 배너 제작을<br />효율적으로 할 수 있을까?
+              </p>
+            </div>
+            <div class="ai-workflow__examples">
+              <div class="ai-workflow__example">
+                <span class="placeholder placeholder--example"></span>
+                <div class="ai-workflow__example-text">
+                  <h4>배너 예시 1</h4>
+                  <p>설명 텍스트</p>
+                </div>
+              </div>
+              <div class="ai-workflow__example">
+                <span class="placeholder placeholder--example"></span>
+                <div class="ai-workflow__example-text">
+                  <h4>배너 예시 2</h4>
+                  <p>설명 텍스트</p>
+                </div>
+              </div>
+              <div class="ai-workflow__example">
+                <span class="placeholder placeholder--example"></span>
+                <div class="ai-workflow__example-text">
+                  <h4>배너 예시 3</h4>
+                  <p>설명 텍스트</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="ai-workflow__example">
-            <span class="placeholder placeholder--example"></span>
-            <div class="ai-workflow__example-text">
-              <h4>예시 컨셉 2</h4>
-              <p>설명 텍스트</p>
+          <!-- 아이콘 에셋 제작 -->
+          <div class="ai-workflow__panel is-active" data-panel="icon">
+            <div class="ai-workflow__card">
+              <img
+                src="icons/aiwork-icon.png"
+                alt=""
+                class="ai-workflow__card-icon"
+                width="80"
+                height="80"
+              />
+              <div class="ai-workflow__card-content">
+                <h3 class="ai-workflow__card-title">아이콘 에셋 제작</h3>
+                <div class="ai-workflow__card-row">
+                  <p class="ai-workflow__card-desc">
+                    아이콘 제작 기준을 AI 프롬프트로 정리해 Gem 형태로
+                    구성하고,<br />
+                    일관된 기준에 따라 서비스 전반에서 사용되는 아이콘 에셋을
+                    제작했습니다.<br />
+                    구성원들도 동일한 기준으로 통일된 경험을 만들 수 있도록
+                    공유했습니다.
+                  </p>
+                  <div class="ai-workflow__card-actions">
+                    <a href="#" class="ai-workflow__card-btn">Gem 바로가기</a>
+                    <a href="#" class="ai-workflow__card-btn"
+                      >아이콘 에셋 보기</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ai-workflow__question">
+              <img
+                src="icons/aiwork-que.png"
+                alt=""
+                class="ai-workflow__question-icon"
+              />
+              <p class="ai-workflow__question-text">
+                통일된 기준을 유지하면서도<br />필요한 아이콘을 빠르게 제작할 수
+                없을까?
+              </p>
+            </div>
+            <div class="ai-workflow__examples">
+              <div class="ai-workflow__example">
+                <img
+                  src="images/img-aiwork-logo-step1.png"
+                  alt="아이콘 에셋 제작 Step 1"
+                  class="ai-workflow__example-img"
+                />
+                <div class="ai-workflow__example-text">
+                  <h4>
+                    <span class="ai-workflow__example-num">1</span> 생성 방식
+                    선택
+                  </h4>
+                  <p>
+                    AI 이미지 추출 방식은 수치 지정이 어렵고,<br />배경 투명화
+                    및 수정에 한계가 있다고 판단했습니다.<br />그래서 아이콘
+                    일관성과 실용성을 고려해,<br />
+                    <strong>SVG 기반 생성 방식을 선택해 구조적인 통일성</strong
+                    >을 먼저 확보했습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="ai-workflow__example">
+                <img
+                  src="images/img-aiwork-logo-step2.png"
+                  alt="아이콘 에셋 제작 Step 2"
+                  class="ai-workflow__example-img"
+                />
+                <div class="ai-workflow__example-text">
+                  <h4>
+                    <span class="ai-workflow__example-num">2</span> 디자인 기준
+                    정의
+                  </h4>
+                  <p>
+                    아이콘 사용 환경을 고려해 선 굵기, 아이콘 크기, 메인·서브
+                    컬러 등<br />핵심 디자인 기준을 정리했습니다.<br />
+                    생성 결과가 흔들리지 않도록, 해당 기준을 모든 아이콘에
+                    공통으로 적용하고<br /><strong
+                      >프롬프트 가이드로 정리</strong
+                    >해 생성 과정에 반영했습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="ai-workflow__example">
+                <img
+                  src="images/img-aiwork-logo-step3.png"
+                  alt="아이콘 에셋 제작 Step 3"
+                  class="ai-workflow__example-img"
+                />
+                <div class="ai-workflow__example-text">
+                  <h4>
+                    <span class="ai-workflow__example-num">3</span> 생성 흐름
+                    구조화
+                  </h4>
+                  <p>
+                    정리된 프롬프트 가이드를 <strong>Gem 형태로 공유해</strong
+                    ><br />
+                    구성원들이
+                    <strong>동일한 기준으로 아이콘을 생성</strong>할 수 있도록
+                    구성했습니다.<br />
+                    또한 <strong>필수 아이콘은 에셋</strong>으로 정리해,<br />실제
+                    서비스에 바로 활용할 수 있도록 정리했습니다.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="ai-workflow__example">
-            <span class="placeholder placeholder--example"></span>
-            <div class="ai-workflow__example-text">
-              <h4>예시 컨셉 3</h4>
-              <p>설명 텍스트</p>
+          <!-- 브랜드 로고 변주 -->
+          <div class="ai-workflow__panel" data-panel="logo">
+            <div class="ai-workflow__card">
+              <div class="ai-workflow__card-content">
+                <h3>브랜드 로고 변주</h3>
+                <p>로고 변주 워크플로우 상세 설명</p>
+                <button>자세히 보기</button>
+              </div>
+            </div>
+            <div class="ai-workflow__question">
+              <img
+                src="icons/aiwork-que.png"
+                alt=""
+                class="ai-workflow__question-icon"
+              />
+              <p class="ai-workflow__question-text">
+                브랜드 일관성을 유지하며<br />다양한 로고 변주를 만들 수 있을까?
+              </p>
+            </div>
+            <div class="ai-workflow__examples">
+              <div class="ai-workflow__example">
+                <span class="placeholder placeholder--example"></span>
+                <div class="ai-workflow__example-text">
+                  <h4>로고 변주 예시 1</h4>
+                  <p>설명 텍스트</p>
+                </div>
+              </div>
+              <div class="ai-workflow__example">
+                <span class="placeholder placeholder--example"></span>
+                <div class="ai-workflow__example-text">
+                  <h4>로고 변주 예시 2</h4>
+                  <p>설명 텍스트</p>
+                </div>
+              </div>
+              <div class="ai-workflow__example">
+                <span class="placeholder placeholder--example"></span>
+                <div class="ai-workflow__example-text">
+                  <h4>로고 변주 예시 3</h4>
+                  <p>설명 텍스트</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -327,19 +622,27 @@
           <h2 class="section-title section-title--center">Contact</h2>
           <div class="contact__cards">
             <div class="contact__card">
-              <span class="placeholder placeholder--contact-icon"></span>
-              <span>010-3632-9795</span>
-              <span class="placeholder placeholder--contact-icon"></span>
+              <div class="contact__text-box">
+                <span class="contact__badge contact__badge--label">PHONE</span>
+                <span class="contact__text">010-3632-9795</span>
+              </div>
+              <img src="images/contact-phone.png" alt="" class="contact__img" />
             </div>
             <div class="contact__card">
-              <span class="placeholder placeholder--contact-icon"></span>
-              <span>mini909705@gmail.com</span>
-              <span class="placeholder placeholder--contact-icon"></span>
+              <img src="images/contact-mail.png" alt="" class="contact__img" />
+              <div class="contact__text-box">
+                <span class="contact__text">mini909705@gmail.com</span>
+                <span class="contact__badge contact__badge--label">MAIL</span>
+              </div>
             </div>
             <div class="contact__card">
-              <span class="placeholder placeholder--contact-icon"></span>
-              <span>Download Resume</span>
-              <span class="placeholder placeholder--contact-icon"></span>
+              <div class="contact__text-box">
+                <span class="contact__badge contact__badge--icon">
+                  <img src="icons/download-arrow-icon.svg" alt="다운로드" width="24" height="24" />
+                </span>
+                <span class="contact__text">Download Resume</span>
+              </div>
+              <img src="images/contact-resume.png" alt="" class="contact__img" />
             </div>
           </div>
         </section>
@@ -349,6 +652,9 @@
       </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="js/projects-data.js"></script>
+    <script src="js/projects-render.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
