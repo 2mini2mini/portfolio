@@ -156,15 +156,40 @@
           </svg>
           <span class="header__logo-text">LEEMINHEE</span>
         </a>
-        <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-expanded="false">
-          <img src="icons/gnb-menu-mobile.svg" alt="" class="header__menu-icon header__menu-icon--open" />
-          <span class="header__menu-icon header__menu-icon--close" aria-hidden="true">×</span>
+        <button
+          type="button"
+          class="header__menu-btn"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+        >
+          <img
+            src="icons/gnb-menu-mobile.svg"
+            alt=""
+            class="header__menu-icon header__menu-icon--open"
+          />
+          <img
+            src="icons/icon-close-bk.svg"
+            alt=""
+            class="header__menu-icon header__menu-icon--close"
+          />
         </button>
         <nav class="header__nav">
-          <a href="#about">ABOUT</a>
-          <a href="#project">PROJECT</a>
-          <a href="#ai-workflow">AI WORKFLOW</a>
-          <a href="#contact">CONTACT</a>
+          <a href="#about" class="header__nav-link">
+            <span>ABOUT</span>
+            <img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" />
+          </a>
+          <a href="#project" class="header__nav-link">
+            <span>PROJECT</span>
+            <img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" />
+          </a>
+          <a href="#ai-workflow" class="header__nav-link">
+            <span>AI WORKFLOW</span>
+            <img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" />
+          </a>
+          <a href="#contact" class="header__nav-link">
+            <span>CONTACT</span>
+            <img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" />
+          </a>
         </nav>
       </div>
     </header>
@@ -184,7 +209,11 @@
               <img src="images/hero-blue.png" alt="" class="hero__img" />
             </div>
           </div>
-          <img src="images/hero-mobile.png" alt="MINHEE PORTFOLIO 2026" class="hero__img-mobile" />
+          <img
+            src="images/hero-mobile.png"
+            alt="MINHEE PORTFOLIO 2026"
+            class="hero__img-mobile"
+          />
           <a href="#about" class="hero__scroll-btn">
             <img src="icons/bg-btn-gray.svg" alt="" class="hero__scroll-bg" />
             <img
@@ -221,12 +250,10 @@
                 </div>
                 <span class="about__skills-category">UI DESIGN</span>
               </div>
-              <img
-                src="images/skills-line.svg"
-                alt=""
-                class="about__skills-divider"
-                aria-hidden="true"
-              />
+              <picture class="about__skills-divider-wrap">
+                <source media="(max-width: 48rem)" srcset="images/skills-line-m.svg" />
+                <img src="images/skills-line.svg" alt="" class="about__skills-divider" aria-hidden="true" />
+              </picture>
               <div class="about__skills-group">
                 <div class="about__skills-icons">
                   <span class="skill-icon" data-tooltip="After Effects"
@@ -235,12 +262,10 @@
                 </div>
                 <span class="about__skills-category">MOTION</span>
               </div>
-              <img
-                src="images/skills-line.svg"
-                alt=""
-                class="about__skills-divider"
-                aria-hidden="true"
-              />
+              <picture class="about__skills-divider-wrap">
+                <source media="(max-width: 48rem)" srcset="images/skills-line-m.svg" />
+                <img src="images/skills-line.svg" alt="" class="about__skills-divider" aria-hidden="true" />
+              </picture>
               <div class="about__skills-group">
                 <div class="about__skills-icons">
                   <span class="skill-icon" data-tooltip="HTML5"
@@ -261,12 +286,10 @@
                 </div>
                 <span class="about__skills-category">MARKUP & INTERACTION</span>
               </div>
-              <img
-                src="images/skills-line.svg"
-                alt=""
-                class="about__skills-divider"
-                aria-hidden="true"
-              />
+              <picture class="about__skills-divider-wrap">
+                <source media="(max-width: 48rem)" srcset="images/skills-line-m.svg" />
+                <img src="images/skills-line.svg" alt="" class="about__skills-divider" aria-hidden="true" />
+              </picture>
               <div class="about__skills-group">
                 <div class="about__skills-icons">
                   <span class="skill-icon" data-tooltip="Cursor AI"
@@ -294,12 +317,22 @@
                 퍼블리싱을 함께 완성합니다.
               </h4>
               <p class="about__text">
-                실무에서는 화면을 꾸미기보다, 사용자가 망설이지 않고<br class="about__text-br" />
-                다음 행동으로 넘어갈 수 있도록 흐름을 먼저 설계하고,<br class="about__text-br" />
-                <span class="about__text-line about__text-line--indent1">그 의도가 실제 화면에서도 그대로 작동하도록</span><br class="about__text-br" />
-                <span class="about__text-line about__text-line--indent2">구현해왔습니다.</span><br class="about__text-br" />
-                앞으로도 사용자의 이해를 기준으로, 복잡한 기능을<br class="about__text-br" />
-                <span class="about__text-line about__text-line--indent1">단순한 경험으로 바꾸는 디자인을 만들고자 합니다.</span>
+                실무에서는 화면을 꾸미기보다, 사용자가 망설이지 않고<br
+                  class="about__text-br"
+                />
+                다음 행동으로 넘어갈 수 있도록 흐름을 먼저 설계하고,<br
+                  class="about__text-br"
+                />
+                <span class="about__text-line about__text-line--indent1"
+                  >그 의도가 실제 화면에서도 그대로 작동하도록
+                  <br class="about__text-br" />구현해왔습니다.</span
+                >
+                앞으로도 사용자의 이해를 기준으로, 복잡한 기능을<br
+                  class="about__text-br"
+                />
+                <span class="about__text-line about__text-line--indent1"
+                  >단순한 경험으로 바꾸는 디자인을 만들고자 합니다.</span
+                >
               </p>
             </div>
             <a href="#" class="about__resume-btn">
@@ -388,7 +421,7 @@
             >반복되는 디자인 업무</strong
           >를 더 나은 방향으로 개선할 수 없을지 고민하며,
           <strong class="ai-workflow__desc-emphasis">AI를 적용</strong>한 자동화
-          작업을 정리해<br />
+          작업을 정리해<br class="ai-workflow__desc-br" />
           회사 구성원들이 함께 활용할 수 있는
           <strong class="ai-workflow__desc-emphasis">효율적인 작업 방식</strong
           >을 만들었습니다.
@@ -462,17 +495,27 @@
                 </div>
               </div>
             </div>
+            <div class="ai-workflow__slider-nav">
+              <button type="button" class="ai-workflow__slider-btn ai-workflow__slider-prev" aria-label="이전">
+                <img src="icons/slide__btn-p.svg" alt="" width="43" height="43" />
+              </button>
+              <button type="button" class="ai-workflow__slider-btn ai-workflow__slider-next" aria-label="다음">
+                <img src="icons/slide__btn-n.svg" alt="" width="43" height="43" />
+              </button>
+            </div>
           </div>
           <!-- 아이콘 에셋 제작 -->
           <div class="ai-workflow__panel is-active" data-panel="icon">
             <div class="ai-workflow__card">
-              <img
-                src="icons/aiwork-icon.png"
-                alt=""
-                class="ai-workflow__card-icon"
-                width="80"
-                height="80"
-              />
+              <div class="ai-workflow__card-icon-wrap">
+                <img
+                  src="icons/aiwork-icon.png"
+                  alt=""
+                  class="ai-workflow__card-icon"
+                  width="80"
+                  height="80"
+                />
+              </div>
               <div class="ai-workflow__card-content">
                 <h3 class="ai-workflow__card-title">아이콘 에셋 제작</h3>
                 <div class="ai-workflow__card-row">
@@ -569,6 +612,14 @@
                 </div>
               </div>
             </div>
+            <div class="ai-workflow__slider-nav">
+              <button type="button" class="ai-workflow__slider-btn ai-workflow__slider-prev" aria-label="이전">
+                <img src="icons/slide__btn-p.svg" alt="" width="43" height="43" />
+              </button>
+              <button type="button" class="ai-workflow__slider-btn ai-workflow__slider-next" aria-label="다음">
+                <img src="icons/slide__btn-n.svg" alt="" width="43" height="43" />
+              </button>
+            </div>
           </div>
           <!-- 브랜드 로고 변주 -->
           <div class="ai-workflow__panel" data-panel="logo">
@@ -612,6 +663,14 @@
                 </div>
               </div>
             </div>
+            <div class="ai-workflow__slider-nav">
+              <button type="button" class="ai-workflow__slider-btn ai-workflow__slider-prev" aria-label="이전">
+                <img src="icons/slide__btn-p.svg" alt="" width="43" height="43" />
+              </button>
+              <button type="button" class="ai-workflow__slider-btn ai-workflow__slider-next" aria-label="다음">
+                <img src="icons/slide__btn-n.svg" alt="" width="43" height="43" />
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -638,11 +697,20 @@
             <div class="contact__card">
               <div class="contact__text-box">
                 <span class="contact__badge contact__badge--icon">
-                  <img src="icons/download-arrow-icon.svg" alt="다운로드" width="24" height="24" />
+                  <img
+                    src="icons/download-arrow-icon.svg"
+                    alt="다운로드"
+                    width="24"
+                    height="24"
+                  />
                 </span>
                 <span class="contact__text">Download Resume</span>
               </div>
-              <img src="images/contact-resume.png" alt="" class="contact__img" />
+              <img
+                src="images/contact-resume.png"
+                alt=""
+                class="contact__img"
+              />
             </div>
           </div>
         </section>

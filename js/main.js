@@ -12,9 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.header__menu-btn');
   const navLinks = document.querySelectorAll('.header__nav a');
 
+  let scrollY = 0;
+
   const closeMenu = () => {
     header.classList.remove('header--menu-open');
     document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollY);
     if (menuBtn) {
       menuBtn.setAttribute('aria-label', '메뉴 열기');
       menuBtn.setAttribute('aria-expanded', 'false');
@@ -22,8 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const openMenu = () => {
+    scrollY = window.scrollY;
     header.classList.add('header--menu-open');
     document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
     if (menuBtn) {
       menuBtn.setAttribute('aria-label', '메뉴 닫기');
       menuBtn.setAttribute('aria-expanded', 'true');
@@ -47,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 64 * 16) {
       closeMenu();
     }
   });
@@ -146,6 +156,47 @@ document.addEventListener('DOMContentLoaded', () => {
           panel.classList.remove('is-active');
         }
       });
+    });
+  });
+
+  // AI Workflow 슬라이드 prev/next 버튼 (모바일)
+  document.querySelectorAll('.ai-workflow__panel').forEach((panel) => {
+    const examples = panel.querySelector('.ai-workflow__examples');
+    const prevBtn = panel.querySelector('.ai-workflow__slider-prev');
+    const nextBtn = panel.querySelector('.ai-workflow__slider-next');
+
+    if (!examples || !prevBtn || !nextBtn) return;
+
+    const slideWidth = () => examples.offsetWidth;
+    const scrollToSlide = (index) => {
+      const scrollLeft = index * slideWidth();
+      examples.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+    };
+
+    const updateDisabledState = () => {
+      const width = slideWidth();
+      if (width <= 0) return;
+      const currentIndex = Math.round(examples.scrollLeft / width);
+      const maxIndex = Math.floor(examples.scrollWidth / width) - 1;
+
+      prevBtn.classList.toggle('is-disabled', currentIndex <= 0);
+      nextBtn.classList.toggle('is-disabled', currentIndex >= maxIndex || maxIndex <= 0);
+    };
+
+    updateDisabledState();
+    examples.addEventListener('scroll', updateDisabledState);
+    window.addEventListener('resize', updateDisabledState);
+    new ResizeObserver(updateDisabledState).observe(examples);
+
+    prevBtn.addEventListener('click', () => {
+      const currentIndex = Math.round(examples.scrollLeft / slideWidth());
+      if (currentIndex > 0) scrollToSlide(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      const currentIndex = Math.round(examples.scrollLeft / slideWidth());
+      const maxIndex = examples.scrollWidth / slideWidth() - 1;
+      if (currentIndex < maxIndex) scrollToSlide(currentIndex + 1);
     });
   });
 
