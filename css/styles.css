@@ -716,6 +716,9 @@ section {
 }
 
 .project__card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   border-radius: 0.75rem;
   overflow: hidden;
   background: #f5f5f5;

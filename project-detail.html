@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로젝트 상세 | MINHEE PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/project-detail.css" />
+  </head>
+  <body class="page-project-detail">
+    <div class="texture-overlay" aria-hidden="true"></div>
+
+    <!-- Header (메인 페이지로 링크) -->
+    <header class="header">
+      <div class="container container--gnb header__inner">
+        <a href="index.html" class="header__logo">
+          <svg
+            class="logo-svg"
+            width="125"
+            height="42"
+            viewBox="0 0 125 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g class="logo__circle" filter="url(#filter0_g_421_1232)">
+              <circle cx="21" cy="21" r="20" fill="#DAEF68" />
+            </g>
+            <g class="logo__rect" filter="url(#filter1_g_421_1232)">
+              <rect x="45" y="3.5" width="35" height="35" rx="5" fill="#5E9BFF" />
+            </g>
+            <g class="logo__triangle" filter="url(#filter2_g_421_1232)">
+              <path
+                d="M122.536 19.5355C123.473 20.4732 124.006 21.7398 123.843 23.0558C123.21 28.1596 120.025 41 104 41C87.9748 41 84.7899 28.1596 84.157 23.0558C83.9938 21.7398 84.5268 20.4732 85.4645 19.5355L100.464 4.53553C102.417 2.58291 105.583 2.58291 107.536 4.53553L122.536 19.5355Z"
+                fill="#FF8E59"
+              />
+            </g>
+            <defs>
+              <filter id="filter0_g_421_1232" x="0" y="0" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="9298" />
+                <feDisplacementMap in="shape" scale="2" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+                <feMerge result="effect1_texture_421_1232"><feMergeNode in="displacedImage" /></feMerge>
+              </filter>
+              <filter id="filter1_g_421_1232" x="44" y="2.5" width="37" height="37" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="9298" />
+                <feDisplacementMap in="shape" scale="2" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+                <feMerge result="effect1_texture_421_1232"><feMergeNode in="displacedImage" /></feMerge>
+              </filter>
+              <filter id="filter2_g_421_1232" x="83.1278" y="2.07107" width="41.7444" height="39.9289" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="8718" />
+                <feDisplacementMap in="shape" scale="2" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+                <feMerge result="effect1_texture_421_1232"><feMergeNode in="displacedImage" /></feMerge>
+              </filter>
+            </defs>
+          </svg>
+          <span class="header__logo-text">LEEMINHEE</span>
+        </a>
+        <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-expanded="false">
+          <img src="icons/gnb-menu-mobile.svg" alt="" class="header__menu-icon header__menu-icon--open" />
+          <img src="icons/icon-close-bk.svg" alt="" class="header__menu-icon header__menu-icon--close" />
+        </button>
+        <nav class="header__nav">
+          <a href="index.html#about" class="header__nav-link"><span>ABOUT</span><img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" /></a>
+          <a href="index.html#project" class="header__nav-link"><span>PROJECT</span><img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" /></a>
+          <a href="index.html#ai-workflow" class="header__nav-link"><span>AI WORKFLOW</span><img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" /></a>
+          <a href="index.html#contact" class="header__nav-link"><span>CONTACT</span><img src="icons/icon-bracket.svg" alt="" class="header__nav-arrow" aria-hidden="true" /></a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail">
+      <!-- Hero Section (프로젝트별 배경/로고) -->
+      <section class="project-detail__hero" id="project-detail-hero">
+        <div class="project-detail__hero-bg" data-hero-bg></div>
+        <div class="project-detail__hero-inner">
+          <div class="project-detail__hero-logo" data-hero-logo>
+            <!-- 프로젝트 로고 영역 (SVG/이미지) -->
+            <span class="placeholder placeholder--project-logo"></span>
+          </div>
+          <h1 class="project-detail__hero-title" data-hero-title>프로젝트명</h1>
+          <p class="project-detail__hero-subtitle" data-hero-subtitle>PROJECT SUBTITLE</p>
+        </div>
+        <a href="#project-detail-content" class="project-detail__scroll-btn" aria-label="아래로 스크롤">
+          <img src="icons/bg-btn-white.svg" alt="" class="project-detail__scroll-bg" />
+          <img src="icons/icon-down.svg" alt="" class="project-detail__scroll-icon" />
+        </a>
+      </section>
+
+      <!-- Content Section -->
+      <section class="project-detail__content" id="project-detail-content">
+        <div class="container">
+          <h2 class="project-detail__title" data-detail-title>프로젝트 제목</h2>
+          <dl class="project-detail__meta">
+            <div class="project-detail__meta-item">
+              <dt>Position</dt>
+              <dd data-detail-position>역할</dd>
+            </div>
+            <div class="project-detail__meta-item">
+              <dt>Contribution</dt>
+              <dd data-detail-contribution>기여도</dd>
+            </div>
+            <div class="project-detail__meta-item">
+              <dt>Date</dt>
+              <dd data-detail-date>기간</dd>
+            </div>
+          </dl>
+          <div class="project-detail__body" data-detail-body>
+            <p>프로젝트 상세 설명이 여기에 들어갑니다.</p>
+          </div>
+          <a href="#" class="project-detail__cta" data-detail-cta>
+            <span class="project-detail__cta-text">사이트 바로가기</span>
+            <img src="icons/arrow-right-green.svg" alt="" class="project-detail__cta-icon" aria-hidden="true" />
+          </a>
+        </div>
+        <div class="project-detail__capture" data-detail-capture>
+          <div class="container">
+            <img src="" alt="페이지 캡쳐" class="project-detail__capture-img" data-detail-capture-img />
+          </div>
+        </div>
+        <div class="project-detail__list-btn-wrap">
+          <a href="index.html#project" class="project-detail__list-btn">
+            <span class="project-detail__list-btn-text">목록보기</span>
+            <img src="icons/element.svg" alt="" class="project-detail__list-btn-icon" aria-hidden="true" />
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026. LEE MINHEE. ALL RIGHTS RESERVED.</p>
+      </footer>
+    </main>
+
+    <script src="js/projects-data.js"></script>
+    <script src="js/project-detail.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

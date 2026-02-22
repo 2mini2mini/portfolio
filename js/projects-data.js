@@ -13,6 +13,19 @@ const PROJECTS_DATA = [
     categoryLabel: "UX Strategy · UI · Publishing",
     name: "실버에듀넷 회사소개<br />사이트 제작",
     tags: "웹사이트, UI/UX, 반응형 웹",
+    detail: {
+      heroBg: "images/projects/detail-silveredunet-company-website.png",
+      title: "실버에듀넷 회사소개 웹사이트 제작",
+      position: "UX 설계 · UI 디자인 · 퍼블리싱",
+      contribution: "UX/정보 구조 설계 60% · UI 디자인 100% · 퍼블리싱 100%",
+      date: "2024 (4주 소요)",
+      description:
+        "<p><strong>실버에듀넷 회사 소개 사이트는 시니어 교육기관에 브랜드를 명확하고 신뢰감 있게 소개하기 위해 정보 구조와 페이지 흐름을 설계한 프로젝트입니다.</strong> 기관 담당자가 브랜드의 핵심 가치를 단계적으로 이해할 수 있도록 브랜드 소개 → 서비스 강점 → 신뢰 요소 순으로 구조를 구성하고, 메시지의 우선순위를 정리해 핵심 정보가 자연스럽게 강조되도록 설계했습니다. 또한 정보 밀도를 조절하고 여백을 확보해 안정적이고 정돈된 인상을 전달하는 데 집중했습니다.</p>" +
+        "<p>UI 디자인 단계에서는 서비스 특성상 중요한 신뢰 형성을 고려해 차분하고 안정적인 톤을 유지하고, 핵심 메시지와 회사 정보 영역이 명확히 구분되도록 레이아웃을 구성했습니다. 퍼블리싱 단계에서는 반응형 구조를 최적화하여 다양한 디바이스 환경에서도 동일한 브랜드 메시지가 일관되게 전달되도록 구현했습니다.</p>" +
+        "<p>기획 부서와 협업하여 UX 구조 설계에 참여하고, UI 디자인과 퍼블리싱을 주도해 공식 홈페이지용 소개 사이트를 신규 구축한 프로젝트입니다.</p>",
+      ctaUrl: "https://profile.silveredu.net/",
+      pageCapture: "images/projects/ex-silveredunet-company-website.png",
+    },
   },
   {
     thumb: "images/projects/ibantot-vietnam-education.png",

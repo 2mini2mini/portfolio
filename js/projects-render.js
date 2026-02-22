@@ -20,7 +20,7 @@ function renderProjects() {
       : "";
 
     return `
-    <article class="project__card" data-category="${project.category}">
+    <a href="project-detail.html?id=${index}" class="project__card" data-category="${project.category}">
       <div class="project__thumb">
         ${thumbContent}
         ${motionContent}
@@ -32,7 +32,7 @@ function renderProjects() {
           </div>
         </div>
       </div>
-    </article>
+    </a>
   `;
   }).join("");
 
