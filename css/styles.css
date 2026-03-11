@@ -491,7 +491,7 @@ section {
 
 .about__text {
   font-size: var(--font-size-16);
-  line-height: var(--line-height-wide);
+  line-height: 1.85;
   margin-bottom: 0.75rem;
   color: #333;
 }
@@ -554,6 +554,7 @@ section {
 
 .about__detail-block p {
   padding-left: 0.75rem;
+  line-height: 1.9;
 }
 
 .about__experience-header {
@@ -1503,7 +1504,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 23rem;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   .about__text-line {
@@ -1552,6 +1553,7 @@ section {
   .about__detail-block p {
     padding-left: 0;
     margin-top: 0.75rem;
+    line-height: 1.9;
   }
 
   .about__experience-header {
@@ -1847,7 +1849,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 20rem;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   .about__text-line {
@@ -1900,6 +1902,7 @@ section {
   .about__detail-block p {
     padding-left: 0;
     margin-top: 0.75rem;
+    line-height: 1.9;
   }
 
   .about__experience-header {

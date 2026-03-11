@@ -159,6 +159,19 @@ const PROJECTS_DATA = [
     categoryLabel: "UI · Publishing",
     name: "키드키즈 안전교육<br />페이지 UI/UX 리뉴얼",
     tags: "웹사이트, UI/UX, 반응형, 교육",
+    detail: {
+      heroBg: "images/projects/kidkids-safety-education/hero.png",
+      title: "키드키즈 안전교육 페이지 UI/UX 리뉴얼",
+      position: "UI 디자인 · 퍼블리싱",
+      contribution: "UI 디자인 100% · 퍼블리싱 100%",
+      tool: "Figma · Vue · Tailwind CSS · Cursor AI",
+      date: "2026 (1주 소요)",
+      description:
+        "<p><strong>유아 교육 플랫폼 키드키즈 안전교육 서비스의 UI 구조를 재설계한 리뉴얼 프로젝트입니다.</strong></p>" +
+        "<p>기존에 콘텐츠, 연간 교육 계획, 개인 관리 기능이 혼합되어 있던 구조를 사용 목적 기준으로 재정리하여 탐색 흐름을 개선했습니다.</p>" +
+        "<p>콘텐츠 카드와 영역별 분류 UI를 정리하고 UI 설계부터 퍼블리싱까지 담당하여 실제 서비스에 적용되었습니다.</p>",
+      ctaUrl: "https://www.kidkids.net/pani/pages/program/new-safety/content.html",
+    },
   },
   {
     thumb: "images/projects/kidkids-homepage-renewal/thumb.png",
