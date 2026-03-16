@@ -2232,6 +2232,10 @@ section {
     font-size: 1rem;
   }
 
+  .contact__card:first-child {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .contact__card {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -2419,6 +2423,10 @@ section {
 
   .ai-workflow__example-text p {
     font-size: 0.875rem;
+  }
+
+  .contact__card:first-child {
+    -webkit-tap-highlight-color: transparent;
   }
 
   .contact__text-box {
