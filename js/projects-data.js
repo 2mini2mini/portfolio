@@ -95,6 +95,7 @@ const PROJECTS_DATA = [
     },
   },
   {
+    hidden: true,
     thumb: "images/projects/bigsplay-interactive-learning-tool/thumb.png",
     category: "web",
     categoryLabel: "UX Strategy · UI",
@@ -171,6 +172,31 @@ const PROJECTS_DATA = [
         "<p>기존에 콘텐츠, 연간 교육 계획, 개인 관리 기능이 혼합되어 있던 구조를 사용 목적 기준으로 재정리하여 탐색 흐름을 개선했습니다.</p>" +
         "<p>콘텐츠 카드와 영역별 분류 UI를 정리하고 UI 설계부터 퍼블리싱까지 담당하여 실제 서비스에 적용되었습니다.</p>",
       ctaUrl: "https://www.kidkids.net/pani/pages/program/new-safety/content.html",
+      focusItems: [
+        {
+          title: "서비스 구조 정리 (IA 개선)",
+          layout: "before-after",
+          beforeImage: "images/projects/kidkids-safety-education/focus-1-before.png",
+          afterImage: "images/projects/kidkids-safety-education/focus-1-after.png",
+          description:
+            "콘텐츠, 연간 계획, 개인 관리 기능이 한 화면에 혼합되어 있던 구조를 안전 콘텐츠 / 연간 계획안 / My 안전으로 구분된 탭 구조로 재정리하여 탐색 흐름을 명확히 개선했습니다.",
+        },
+        {
+          title: "재사용 가능한 UI 컴포넌트 설계",
+          layout: "before-after",
+          beforeImage: "images/projects/kidkids-safety-education/focus-2-before.png",
+          afterImage: "images/projects/kidkids-safety-education/focus-2-after.png",
+          description:
+            "콘텐츠 카드, 탭, 리스트 등의 UI 요소를 재사용 가능한 컴포넌트 구조로 설계하여 유지보수와 확장성을 고려한 퍼블리싱 구조로 개선했습니다.",
+        },
+        {
+          title: "교육 관리 기능 확장",
+          layout: "after-only",
+          afterImage: "images/projects/kidkids-safety-education/focus-3-after.png",
+          description:
+            "안전교육 진행 현황을 확인하기 어려웠던 구조를 My 안전 페이지를 통해 교육 영역별 진행 현황과 기록을 한눈에 확인할 수 있는 관리 기능 중심 UI로 개선했습니다.",
+        },
+      ],
     },
   },
   {

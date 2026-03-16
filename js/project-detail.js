@@ -120,8 +120,20 @@
     focusList.innerHTML = project.detail.focusItems
       .map(
         (item, i) => {
-          const isBeforeAfter = item.beforeImage || item.afterImage;
-          const visualHtml = isBeforeAfter
+          const isAfterOnly = item.layout === "after-only";
+          const isBeforeAfter =
+            item.layout === "before-after" ||
+            item.beforeImage ||
+            item.afterImage;
+          const visualHtml = isAfterOnly
+            ? `
+          <div class="project-detail__focus-visuals project-detail__focus-visuals--after-only">
+            <div class="project-detail__focus-visual">
+              <span class="project-detail__focus-visual-label">After</span>
+              ${item.afterImage ? `<img src="${item.afterImage}" alt="After" class="project-detail__focus-img" />` : '<span class="placeholder placeholder--focus-visual"></span>'}
+            </div>
+          </div>`
+            : isBeforeAfter
             ? `
           <div class="project-detail__focus-visuals project-detail__focus-visuals--compare">
             <div class="project-detail__focus-visual">
@@ -138,8 +150,8 @@
             ${item.image ? `<img src="${item.image}" alt="${item.title}" class="project-detail__focus-img" />` : '<span class="placeholder placeholder--focus-visual"></span>'}
           </div>`;
           return `
-      <div class="project-detail__focus-item${isBeforeAfter ? " project-detail__focus-item--before-after" : ""}">
-        ${isBeforeAfter
+      <div class="project-detail__focus-item${isBeforeAfter || isAfterOnly ? " project-detail__focus-item--before-after" : ""}">
+        ${isBeforeAfter || isAfterOnly
             ? `
         <div class="project-detail__focus-content">
           <h4 class="project-detail__focus-item-title"><span class="ai-workflow__example-num">${i + 1}</span> ${item.title}</h4>

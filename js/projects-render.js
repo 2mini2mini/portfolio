@@ -8,7 +8,9 @@ function renderProjects() {
   const grid = document.querySelector(".project__grid");
   if (!grid) return;
 
-  grid.innerHTML = PROJECTS_DATA.map((project, index) => {
+  grid.innerHTML = PROJECTS_DATA.map((project, index) => ({ project, index }))
+    .filter(({ project }) => !project.hidden)
+    .map(({ project, index }) => {
     const nameText = project.name.replace(/<[^>]*>/g, "");
     const thumbContent = project.thumb
       ? `<img src="${project.thumb}" alt="${nameText}" class="project__thumb-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><span class="placeholder placeholder--project project__thumb-fallback" style="display:none"></span>`
@@ -34,7 +36,7 @@ function renderProjects() {
       </div>
     </a>
   `;
-  }).join("");
+    }).join("");
 
   initMotionAnimations();
 }

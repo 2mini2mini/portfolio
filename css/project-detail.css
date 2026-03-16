@@ -280,6 +280,20 @@ body.page-project-detail {
   gap: 1.5rem;
 }
 
+.project-detail__focus-visuals--after-only {
+  display: flex;
+  justify-content: center;
+}
+
+.project-detail__focus-visuals--after-only .project-detail__focus-visual {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: calc((100% - 1.5rem) / 2);
+  width: 100%;
+}
+
 .project-detail__focus-visuals--compare .project-detail__focus-visual {
   flex-shrink: 0;
   display: flex;
@@ -531,6 +545,10 @@ body.page-project-detail {
 
   .project-detail__focus-visuals--compare {
     gap: 1rem;
+  }
+
+  .project-detail__focus-visuals--after-only .project-detail__focus-visual {
+    max-width: calc((100% - 1rem) / 2);
   }
 
   .project-detail__focus-item-title {
