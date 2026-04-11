@@ -273,6 +273,23 @@ const PROJECTS_DATA = [
     categoryLabel: "UI · Publishing",
     name: "키드키즈 신학기 유료회원<br />1+1 이벤트 페이지",
     tags: "이벤트 페이지, 프로모션, 마케팅",
+    detail: {
+      heroBg: "images/projects/kidkids-newsemester-1plus1-event/hero.png",
+      title: "키드키즈 신학기 유료회원 1+1 이벤트 페이지",
+      position: "UI 디자인 · 퍼블리싱",
+      contribution: "UI 디자인 100% · 퍼블리싱 100%",
+      date: "2026 (1주 소요)",
+      tool: "Figma · Html · CSS · Cursor AI",
+      description:
+        "<p><strong>강한 프로모션 메시지를 효과적으로 전달하기 위해 오렌지 계열의 고채도 컬러를 메인으로 사용해 주목도를 높였습니다.</strong></p>" +
+        "<p>방사형 그래픽과 입체적인 타이포를 활용해 ‘1+1’ 혜택이 중심적으로 인지되도록 시각적 집중도를 강화했습니다.</p>" +
+        "<p>하위 섹션은 옐로우 톤으로 전환하여 분위기를 유지하면서 영역 간 구분을 명확히 했습니다.</p>" +
+        "<p>또한 카드형 UI와 고대비 CTA 버튼을 통해 정보 전달과 사용자 행동 유도를 동시에 고려한 디자인으로 구성했습니다.</p>",
+      ctaUrl: "https://www.kidkids.net/event/magazine_mem_2026/",
+      ctaText: "이벤트 바로가기",
+      responsiveImage:
+        "images/projects/kidkids-newsemester-1plus1-event/page-full.png",
+    },
   },
   {
     thumb: "images/projects/kidkidsmall-warehouse-sale-event/thumb.png",
