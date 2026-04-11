@@ -16,6 +16,10 @@
     return;
   }
 
+  if (project.category) {
+    document.body.setAttribute("data-project-category", project.category);
+  }
+
   const nameText = project.name.replace(/<[^>]*>/g, "");
 
   /* Hero (썸네일과 별도 이미지 사용, detail.heroBg 필수) */
@@ -54,7 +58,7 @@
   }
 
   /* Content */
-  document.title = `${nameText} | MINHEE PORTFOLIO`;
+  document.title = `${project.detail?.title || nameText} | MINHEE PORTFOLIO`;
 
   const detailTitle = document.querySelector("[data-detail-title]");
   if (detailTitle) {

@@ -9,6 +9,30 @@
  */
 const PROJECTS_DATA = [
   {
+    thumb: "images/projects/kidkidsmall-commerce-family-month-event/thumb.png",
+    category: "promotion",
+    categoryLabel: "UI · Publishing",
+    name: "커머스 가정의 달<br />이벤트 페이지",
+    tags: "이벤트 페이지, 프로모션, 커머스",
+    detail: {
+      heroBg:
+        "images/projects/kidkidsmall-commerce-family-month-event/hero.png",
+      title: "커머스 가정의 달 이벤트 페이지",
+      position: "UI 디자인 · 퍼블리싱",
+      contribution: "UI 디자인 100% · 퍼블리싱 100%",
+      date: "2026 (1주 소요)",
+      tool: "Figma · Html · CSS · Cursor AI",
+      description:
+        "<p><strong>가정의 달 시즌 기획전에 맞춰, 사용자의 이벤트 참여와 상품 탐색을 유도하기 위해 구조와 사용자 흐름을 설계했습니다.</strong></p>" +
+        "<p>이벤트 배너, 상품 구성, 참여 영역을 단계적으로 배치하고, 프로모션 영역과 커머스 상품 영역을 구분하여 정보 전달력을 높이는 UI를 설계하고 디자인했습니다.</p>" +
+        "<p>또한 간식과 행운을 테마로, 클로버 모티프를 활용해 보상에 대한 기대감을 형성하고 참여를 유도하는 방향으로 시각적 위계를 구성했습니다.</p>",
+      ctaUrl: "https://mall.kidkids.net/event/store_event/?epn_id=2653",
+      ctaText: "이벤트 바로가기",
+      responsiveImage:
+        "images/projects/kidkidsmall-commerce-family-month-event/page-full.png",
+    },
+  },
+  {
     thumb: "images/projects/silveredunet/thumb.png",
     category: "web",
     categoryLabel: "UX Strategy · UI · Publishing",
@@ -200,6 +224,7 @@ const PROJECTS_DATA = [
     },
   },
   {
+    hidden: true,
     thumb: "images/projects/kidkids-homepage-renewal/thumb.png",
     category: "web",
     categoryLabel: "UX Strategy · UI",
@@ -235,6 +260,7 @@ const PROJECTS_DATA = [
     tags: "모바일 앱, 브랜드 아이덴티티, UI/UX",
   },
   {
+    hidden: true,
     thumb: "images/projects/bigsplay-renewal-promotion/thumb.png",
     category: "promotion",
     categoryLabel: "UI · Publishing",
@@ -270,6 +296,7 @@ const PROJECTS_DATA = [
     tags: "프로모션 페이지, 브랜드 소개, 리뉴얼",
   },
   {
+    hidden: true,
     thumb: "images/projects/kidkidsmall-artnolle-promotion/thumb.png",
     category: "promotion",
     categoryLabel: "UI · Publishing",

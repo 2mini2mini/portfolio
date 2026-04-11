@@ -194,17 +194,30 @@ body.page-project-detail {
   overflow-wrap: break-word;
 }
 
-.project-detail__cta {
+/* 프로젝트 카드 호버 오버레이(.project__overlay)와 동일 톤 */
+.page-project-detail .project-detail__cta {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0;
   background: none;
-  color: #ADCC00;
+  color: #adcc00;
   font-size: 1.5rem; /* 24px */
   font-weight: 700;
   text-decoration: none;
   transition: opacity 0.2s ease;
+}
+
+.page-project-detail[data-project-category="app"] .project-detail__cta {
+  color: #3481ff;
+}
+
+.page-project-detail[data-project-category="promotion"] .project-detail__cta {
+  color: #ee6f33;
+}
+
+.page-project-detail[data-project-category="others"] .project-detail__cta {
+  color: #adcc00;
 }
 
 .project-detail__cta:hover {
@@ -215,6 +228,7 @@ body.page-project-detail {
   width: 1.75rem;
   height: 1.75rem;
   display: block;
+  flex-shrink: 0;
 }
 
 /* What I Focused On - 배경 화면 너비 꽉 차게 */
